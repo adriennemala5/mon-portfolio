@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon portfolio</title>
+        <link rel="stylesheet"href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">A</div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#competences">competences</a></li>
+                    <li><a href="#projets">projets</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="accueil">
+                <h1>MALA TATSINKOU ADRIENNE</h1>
+                <h2>Etudiante Licence 2 Informatique</h2>
+                <figure>
+                    <img src="images/profil.jpg" alt="Avatar">
+                    <figcaption>photo de profil</figcaption>
+                </figure>
+                <p>Je suis passionée par la data science.Actuellement en apprentissage ,je développe mes compétences en programmation,base de données...Sérieuse et motivée,je cherche à améliorer mes connaissances
+                   et à acquerir de l'expérience dans le domaine de l'ingénierie des données.</p>
+                    <a href="https://github.com/"target="_blank">voir mon GitHub</a>
+            </section>
+            <section id="competences">
+                <h2>Mes competences</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                 <th scope="col">Domaine</th>
+                                 <th scope="col">Competences</th>
+                                 <th scope="col">niveau</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web</td>
+                                <td>HTML</td>
+                                <td>Debutante</td>
+                            </tr>
+                            <tr>
+                                <td>Web</td>
+                                <td>CSS</td>
+                                <td>Debutante</td>
+                            </tr>
+                            <tr>
+                                <td>Programmation</td>
+                                <td>python</td>
+                                <td>Intermediaire</td>
+                            </tr>
+                            <tr>
+                                <td>Web</td>
+                                <td>Javascript</td>
+                                <td>Debutante</td>
+                            </tr>
+                            <tr>
+                                <td>Outils</td>
+                                <td>Git</td>
+                                <td>Debutante</td>
+                            </tr>
+                            <tr>
+                                <td>Base de donnees</td>
+                                <td>SQL</td>
+                                <td>Debutante</td>
+                            </tr>
+                            <tr>
+                                <td>Data Science</td>
+                                <td>Analyse de donnees</td>
+                                <td>Debutante</td>
+                            </tr>
+                            <tr>
+                                <td>Systeme</td>
+                                <td>Linux</td>
+                                <td>Intermediaire</td>
+                            </tr>
+                            <tr>
+                                <td>Framework</td>
+                                <td>React</td>
+                                <td>Debutante</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="projets">
+                <h2>Mes projets</h2>
+                <div class="projets-container">
+                    <article class="carte">
+                        <img src="images/pipeline.png" alt="Processus de tranformation des donnees">
+                        <h3>Pipeline ETL</h3>
+                        <p>Extraction,transformation et chargement des donnees avec python et SQL.</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Pandas</li>
+                        </ul>
+                        <a href="#">voir le Projet</a>
+                    </article>
+                    <article class="carte">
+                        <img src="images/site.png" alt="Projet site web">
+                        <h3>Site Personnel</h3>
+                        <p>Creation de mon portfolio pour presenter mes competences et projets.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <a href="#">voir le Projet</a>
+                    </article>
+                    <article class="carte">
+                        <img src="images/database.jpg" alt="Projet base de donnees">
+                        <h3>Data Warehouse</h3>
+                        <p>modelisation et creation d'un entrepot de donnees avec MySQL.</p>
+                        <ul>
+                            <li>Modelisation</li>
+                            <li>SQL</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <a href="#">voir le Projet</a>
+                    </article>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>contact</h2>
+                <form action="contact_php"method="POST">
+                    <div>
+                      <label for="nom">Nom</label> 
+                      <input type="text" id="nom" name="nom" required minlenght="2">
+                    </div>
+                    <div>
+                       <label for="email">Email</label>
+                       <input type="email" id="email" name="email" required> 
+                    </div>
+                    <div>
+                       <label for="sujet">Sujet</label>
+                       <select id="sujet" name="sujet" required>
+                        <option value="">choisir un sujet</option>
+                        <option value="stage">Stage</option>
+                        <option value="projet">Projet</option>
+                        <option value="autre">Autre</option>
+                       </select>
+                    </div>
+                    <div>
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" rows="5" required></textarea> 
+                    </div>
+                    <div>
+                        <label for="cgu">
+                            <input type="checkbox" id="cgu" name="CGU" required>
+                             J'accepte les conditions d'utilisation
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Envoyer</button>
+                        <button type="reset">Effacer</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy:2026 MALA Adrienne</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkeIn</a>
+            </div>
+        </footer>
+    </body>
+</html>
